@@ -8,6 +8,16 @@
         <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
         <link rel="stylesheet" type="text/css" href="style.css" />
 
+        <script>
+            tailwind.config = {
+                theme: {
+                  screens: {
+                    'phone': '300px',
+                    'laptop': '1024px'
+                  }
+                }
+            }
+        </script>
     </head>
 
     <body class="dark">
@@ -15,16 +25,16 @@
             <a href="#timeline"><img class="w-8 invert-[.70] absolute bottom-8 left-1/2 transform -translate-x-1/2" src="arrow-down.svg"/></a>
             <div class="flex h-screen w-screen" id="blur">
                 <div class="m-auto center text-center">
-                    <h1 class="text-6xl font-light text-gray-300">Jordan Dalcq</h1><br />
-                    <p class="capitalize typeme text-gray-300">ethical hacker and low-level systems developper </p>
+                    <h1 class="phone:text-4xl laptop:text-6xl font-light text-gray-300">Jordan Dalcq</h1><br />
+                    <p class="capitalize typeme text-gray-300 phone:text-xs laptop:text-base">ethical hacker and low-level systems developper </p>
                 </div>
             </div>
         </div>
-        <div class="h-screen flex center" id="timeline">
-            <h2 class="my-auto ml-auto text-gray-300 text-2xl blink">My timeline</h2>
-            <ol class="relative border-l border-[#F29668] m-auto">                  
+        <div class="h-screen laptop:flex center" id="timeline">
+            <h2 class="phone:w-screen phone:mt-5 phone:mb-8 laptop:w-fit laptop:m-auto text-gray-300 phone:text-xl laptop:text-2xl blink">My timeline</h2>
+            <ol class="laptop:relative phone:mx-8 laptop:m-auto border-l border-[#F29668] m-auto phone:text-xs laptop:text-base">                  
               <li class="mt-5 mb-10 ml-4">
-                  <div class="absolute w-3 h-3 bg-[#F29668] rounded-full mt-1.5 -left-1.5 border border-[#F29668]"></div>
+                  <div class="phone:mx-8 laptop:mx-0 absolute w-3 h-3 bg-[#F29668] rounded-full mt-1.5 -left-1.5 border border-[#F29668]"></div>
                   <time class="mb-1 text-sm font-normal leading-none text-gray-300">September 2022 - ... </time>
                   <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-1">University of Liège</h3>
                   <em>Master degree in computer science with a focus on computer system security</em>
@@ -33,7 +43,7 @@
                   </p>
               </li>
                <li class="mb-10 ml-4">
-                    <div class="absolute w-3 h-3 bg-[#F29668] rounded-full mt-1.5 -left-1.5 border border-[#F29668]"></div>
+                    <div class="phone:mx-8 laptop:mx-0 absolute w-3 h-3 bg-[#F29668] rounded-full mt-1.5 -left-1.5 border border-[#F29668]"></div>
                     <time class="mb-1 text-sm font-normal leading-none text-gray-300">February 2022 - May 2022</time>
                     <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-1">Odoo</h3>
                     <em>Internship as a software developper</em>
@@ -42,7 +52,7 @@
                     </p>
               </li>
               <li class="mb-10 ml-4">
-                  <div class="absolute w-3 h-3 bg-[#F29668] rounded-full mt-1.5 -left-1.5 border border-[#F29668]"></div>
+                  <div class="phone:mx-8 laptop:mx-0 absolute w-3 h-3 bg-[#F29668] rounded-full mt-1.5 -left-1.5 border border-[#F29668]"></div>
                   <time class="mb-1 text-sm font-normal leading-none text-gray-300">September 2019 - June 2022</time>
                   <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-1">Hénallux - IESN</h3>
                   <em>Bachelor degree in computer system security</em>
@@ -50,7 +60,7 @@
                   </p>
               </li>
               <li class="ml-4">
-                  <div class="absolute w-3 h-3 bg-[#F29668] rounded-full mt-1.5 -left-1.5 border border-[#F29668]"></div>
+                  <div class="phone:mx-8 laptop:mx-0 absolute w-3 h-3 bg-[#F29668] rounded-full mt-1.5 -left-1.5 border border-[#F29668]"></div>
                   <time class="mb-1 text-sm font-normal leading-none text-gray-300">September 2014 - June 2019</time>
                   <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Institut Saint Berchmans & Sainte Marie</h3>
                   <em>Secondary school with transition technique - CESS</em>
@@ -66,8 +76,6 @@
                   </p>
               </li>
             </ol>
-        </div>
-        <div class="flex h-screen bg-fixed bg-[url('back.jpg')] bg-center" id="intro">
         </div>
     </body>
 </html>
