@@ -4,23 +4,68 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://cdn.tailwindcss.com"></script>
-        <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.7/dist/flowbite.min.css" />
+        <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
         <link rel="stylesheet" type="text/css" href="style.css" />
 
     </head>
 
-    <body>
+    <body class="dark">
         <div class="flex h-screen bg-fixed bg-[url('back.jpg')] bg-center" id="intro">
-            <a href="#next"><img class="w-8 invert-[.70] absolute bottom-8 left-1/2 transform -translate-x-1/2" src="arrow-down.svg"/></a>
+            <a href="#timeline"><img class="w-8 invert-[.70] absolute bottom-8 left-1/2 transform -translate-x-1/2" src="arrow-down.svg"/></a>
             <div class="flex h-screen w-screen" id="blur">
                 <div class="m-auto center text-center">
-                    <h1 class="text-6xl font-light">Jordan Dalcq</h1><br />
-                    <p class="capitalize typeme">ethical hacker and low-level systems developper </p>
+                    <h1 class="text-6xl font-light text-gray-300">Jordan Dalcq</h1><br />
+                    <p class="capitalize typeme text-gray-300">ethical hacker and low-level systems developper </p>
                 </div>
             </div>
         </div>
-        <div class="flex h-screen" id="next">
-            <p>Flemme</p>
+        <div class="h-screen flex center" id="timeline">
+            <h2 class="my-auto ml-auto text-gray-300 text-2xl blink">My timeline</h2>
+            <ol class="relative border-l border-[#F29668] m-auto">                  
+              <li class="mt-5 mb-10 ml-4">
+                  <div class="absolute w-3 h-3 bg-[#F29668] rounded-full mt-1.5 -left-1.5 border border-[#F29668]"></div>
+                  <time class="mb-1 text-sm font-normal leading-none text-gray-300">September 2022 - ... </time>
+                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-1">University of Liège</h3>
+                  <em>Master degree in computer science with a focus on computer system security</em>
+                  <p class="mb-4 text-base font-normal text-gray-400 mt-1">
+                      From above and behond !
+                  </p>
+              </li>
+               <li class="mb-10 ml-4">
+                    <div class="absolute w-3 h-3 bg-[#F29668] rounded-full mt-1.5 -left-1.5 border border-[#F29668]"></div>
+                    <time class="mb-1 text-sm font-normal leading-none text-gray-300">February 2022 - May 2022</time>
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-1">Odoo</h3>
+                    <em>Internship as a software developper</em>
+                    <p class="mb-4 text-base font-normal text-gray-400 mt-1">
+                        Worked on hardening the framework sandbox.
+                    </p>
+              </li>
+              <li class="mb-10 ml-4">
+                  <div class="absolute w-3 h-3 bg-[#F29668] rounded-full mt-1.5 -left-1.5 border border-[#F29668]"></div>
+                  <time class="mb-1 text-sm font-normal leading-none text-gray-300">September 2019 - June 2022</time>
+                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-1">Hénallux - IESN</h3>
+                  <em>Bachelor degree in computer system security</em>
+                  <p class="mb-4 text-base font-normal text-gray-400 mt-1">
+                  </p>
+              </li>
+              <li class="ml-4">
+                  <div class="absolute w-3 h-3 bg-[#F29668] rounded-full mt-1.5 -left-1.5 border border-[#F29668]"></div>
+                  <time class="mb-1 text-sm font-normal leading-none text-gray-300">September 2014 - June 2019</time>
+                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Institut Saint Berchmans & Sainte Marie</h3>
+                  <em>Secondary school with transition technique - CESS</em>
+                  <p class="mb-4 text-base font-normal text-gray-400 mb-1">
+                      8 to 10 hours in computer science related subject and the remaning in more classic subjects.<br /><br />
+                      The main skills I learned: 
+                      <ul class="text-gray-400 list-disc list-inside mt-1">
+                          <li>Python3 development</li>
+                          <li>Web development</li>
+                          <li>Linux system administratoin</li>
+                          <li>Basics of embedded system</li>
+                      </ul>
+                  </p>
+              </li>
+            </ol>
         </div>
     </body>
 </html>
